@@ -16,7 +16,7 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logoUrl} />
+          <img src={logoUrl} alt="BRACU SHIKARI" className="h-12 w-12 object-contain" />
           <span className="font-display text-lg font-bold uppercase tracking-widest">
             BRACU <span className="text-blood">SHIKARI</span>
           </span>
