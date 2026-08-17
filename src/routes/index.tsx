@@ -50,7 +50,7 @@ function Home() {
             <span className="h-px w-8 bg-blood" />
           </div>
           <p className="mt-8 mx-auto max-w-2xl text-base md:text-lg text-muted-foreground">
-            The Official CTF (Capture The Flag) Team of{" "}
+            The Official Ethical Hacking Team of{" "}
             <span className="text-foreground font-semibold">BRAC University</span>.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">

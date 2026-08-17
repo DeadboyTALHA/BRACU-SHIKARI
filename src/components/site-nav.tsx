@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoUrl from "@/assets/logo.jpg";
+import logoTransparentUrl from "@/assets/logo-transparent.png";
+import styleTextUrl from "@/assets/style-text.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -16,10 +18,8 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logoUrl} alt="BRACU SHIKARI" className="h-12 w-12 object-contain" />
-          <span className="font-display text-lg font-bold uppercase tracking-widest">
-            BRACU <span className="text-blood">SHIKARI</span>
-          </span>
+          <img src={logoTransparentUrl} alt="BRACU SHIKARI" className="h-12 w-12 object-contain" />
+          <img src={styleTextUrl} alt="BRACU SHIKARI" className="w-48 h-auto object-contain"/>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           {links.map((l) => (
@@ -29,7 +29,7 @@ export function SiteNav() {
               activeOptions={{ exact: l.to === "/" }}
               activeProps={{ className: "text-foreground after:scale-x-100" }}
               inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-              className="relative px-4 py-2 text-sm font-mono uppercase tracking-wider transition-colors after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:origin-left after:scale-x-0 after:bg-blood after:transition-transform hover:after:scale-x-100"
+              className="relative px-4 py-2 text-base font-mono uppercase tracking-wider transition-colors after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:origin-left after:scale-x-0 after:bg-blood after:transition-transform hover:after:scale-x-100"
             >
               {l.label}
             </Link>
